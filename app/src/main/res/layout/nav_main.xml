@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color_while"
+    android:orientation="vertical" >
+
+    <include layout="@layout/detail_title" />
+
+    <com.mieasy.whrt_app_android_4.view.ValuePicker
+        android:id="@+id/vpTest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.mieasy.whrt_app_android_4.view.ValuePicker>
+
+</LinearLayout>

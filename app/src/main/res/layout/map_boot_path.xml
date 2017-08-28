@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color_while"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/detail_title_from_and_to" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="66dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!-- 站数 -->
+        <LinearLayout
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_road_label_stationNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/activity_bg_color_gray"
+                android:text="站数(个)"/>
+
+            <TextView
+                android:id="@+id/tv_road_stationNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/block_bg_color_black"
+                android:text="6"
+                android:textSize="34dp"/>
+        </LinearLayout>
+        <!-- 换乘次数 -->
+        <LinearLayout
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_road_label_huancheng_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/activity_bg_color_gray"
+                android:text="换乘(次)"/>
+            <TextView
+                android:id="@+id/tv_road_huancheng_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/block_bg_color_black"
+                android:text="1"
+                android:textSize="34dp"/>
+        </LinearLayout>
+        <!-- 票价 -->
+        <LinearLayout
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_road_label_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/activity_bg_color_gray"
+                android:text="票价(元)"/>
+            <TextView
+                android:id="@+id/tv_road_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/block_bg_color_black"
+                android:text="2"
+                android:textSize="34dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="left|center_vertical"
+        android:padding="5dp"
+        android:background="@color/activity_bg_color_gray_transparent_20">
+        <TextView
+            android:id="@+id/tv_road_time"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="@color/block_bg_color_black"
+            android:text="2"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <com.mieasy.whrt_app_android_4.view.InfoViewPager
+        android:id="@+id/vp_infoviewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </com.mieasy.whrt_app_android_4.view.InfoViewPager>
+
+     <!-- 车站导航 -->
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/activity_bg_color_while"
+        android:minHeight="50dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/ib_linepath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/activity_bg_color_while"
+                android:src="@drawable/navi_inside_deselect" />
+
+            <TextView
+                android:id="@+id/tv_linepath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/linepath"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="10sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/ib_infopath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/activity_bg_color_while"
+                android:src="@drawable/navi_exit_deselect" />
+
+            <TextView
+                android:id="@+id/tv_infopath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/activity_bg_color_gray"
+                android:text="@string/infopath"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

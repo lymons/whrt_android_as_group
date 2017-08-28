@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:background="@color/activity_bg_color_while"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:baselineAligned="false" >
+
+        <ListView
+            android:id="@+id/lvLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:divider="@color/activity_bg_color_gray_transparent"
+            android:background="@color/line_list"
+            android:dividerHeight="1px"
+            android:footerDividersEnabled="true"
+            android:layoutAnimation="@anim/list_anim_layout"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#22000000" />
+
+        <ListView
+            android:id="@+id/lvRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:divider="@color/activity_bg_color_gray_transparent"
+            android:dividerHeight="1px"
+            android:footerDividersEnabled="true"
+            android:layoutAnimation="@anim/list_anim_layout"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

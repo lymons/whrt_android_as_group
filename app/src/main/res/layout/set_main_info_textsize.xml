@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color_gray_transparent_20"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_bg_color_while"
+        android:weightSum="30" >
+
+        <TableRow
+            android:id="@+id/table_row_21"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="5"
+            android:background="@drawable/textview_fouces"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:weightSum="5" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="4.5"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/text_21"
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/text_21_img"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="0.5"
+                android:src="@drawable/check"
+                android:visibility="gone" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/activity_bg_color_gray_transparent_20" />
+
+        <TableRow
+            android:id="@+id/table_row_20"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="5"
+            android:background="@drawable/textview_fouces"
+            android:clickable="true"
+            android:weightSum="5" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="4.5"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/text_20"
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/text_20_img"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="0.5"
+                android:src="@drawable/check"
+                android:visibility="gone" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/activity_bg_color_gray_transparent_20" />
+
+        <TableRow
+            android:id="@+id/table_row_19"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="5"
+            android:weightSum="5"
+            android:background="@drawable/textview_fouces"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="4.5"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/text_19"
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/text_19_img"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="0.5"
+                android:src="@drawable/check"
+                android:visibility="gone" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/activity_bg_color_gray_transparent_20" />
+
+        <TableRow
+            android:id="@+id/table_row_18"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="5"
+            android:background="@drawable/textview_fouces"
+            android:weightSum="5"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="4.5"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/text_18"
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/text_18_img"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="0.5"
+                android:src="@drawable/check"
+                android:visibility="gone" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/activity_bg_color_gray_transparent_20" />
+
+        <TableRow
+            android:id="@+id/table_row_17"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="5"
+            android:background="@drawable/textview_fouces"
+            android:weightSum="5"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="4.5"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/text_17"
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/text_17_img"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="0.5"
+                android:src="@drawable/check"
+                android:visibility="gone" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/activity_bg_color_gray_transparent_20" />
+
+        <TableRow
+            android:id="@+id/table_row_16"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="5"
+            android:background="@drawable/textview_fouces"
+            android:weightSum="5"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_weight="4.5"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/text_16"
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/text_16_img"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="0.5"
+                android:src="@drawable/check"
+                android:visibility="gone" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

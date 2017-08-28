@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_bg_color_blue"
+        android:gravity="center_vertical"
+        android:minHeight="50dip"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/iv_top_left_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@color/block_bg_color_alpha"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+
+
+        <TextView
+            android:id="@+id/tv_top_left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/nearbystation"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/activity_bg_color_while"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_top_left_site"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="3dp"
+            android:gravity="center"
+            android:textColor="@color/activity_bg_color_while"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/route_map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+
+    <LinearLayout
+        android:id="@+id/common_constact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_bg_color_blue"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_walk"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_selector_oneclick"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="6dip"
+                android:paddingTop="6dip"
+                android:textColor="#ffffff"
+                android:text="步行"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/bt_transit"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bt_selector_two"
+                android:gravity="center"
+                android:paddingBottom="6dip"
+                android:paddingTop="6dip"
+                android:text="公交"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/bt_driving"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bt_selector_three"
+                android:gravity="center"
+                android:paddingBottom="6dip"
+                android:paddingTop="6dip"
+                android:text="自驾"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

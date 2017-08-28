@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".act.pro.SiteCollectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_bg_color_blue"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backbutn"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back" />
+
+        <LinearLayout
+            android:id="@+id/common_constact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/sitebtn"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rb_bg_01"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:paddingBottom="6dip"
+                    android:paddingTop="6dip"
+                    android:text="站点"
+                    android:textColor="@drawable/title_text_sel"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/linebtn"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rb_bg_02"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="6dip"
+                    android:paddingTop="6dip"
+                    android:text="线路"
+                    android:textColor="@drawable/title_text_sel"
+                    android:textSize="16sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/vp_sitecollection"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1" >-->
+    <!--</android.support.v4.view.ViewPager>-->
+
+    <FrameLayout
+        android:id="@+id/sitecollectionfragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/common_constact"></FrameLayout>
+
+</LinearLayout>

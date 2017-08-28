@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color_while"
+    android:orientation="vertical" >
+
+    <include layout="@layout/detail_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/lin_main_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="10" >
+
+            <LinearLayout
+                android:id="@+id/lin_top_view"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/setting_top" />
+            </LinearLayout>
+            <!--字号、欢迎页-->
+            <LinearLayout
+                android:id="@+id/lin_bottom_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/activity_bg_color_while"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/query_nfc"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/textview_fouces"
+                        android:text="@string/set_querynfc"
+                        android:textColor="@color/block_bg_color_black_90"
+                        android:textSize="16sp"
+                        android:visibility="gone"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/activity_bg_color_gray_transparent_20" />
+
+                    <TextView
+                        android:id="@+id/text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/textview_fouces"
+                        android:text="@string/set_textsize"
+                        android:textColor="@color/block_bg_color_black_90"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/activity_bg_color_gray_transparent_20" />
+
+                    <TextView
+                        android:id="@+id/page_welcome"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/textview_fouces"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="@string/set_welcome"
+                        android:textColor="@color/block_bg_color_black_90"
+                        android:textSize="16sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/activity_bg_color_gray_transparent_20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="91dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/activity_bg_color_while"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/share_app"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/textview_fouces"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="@string/set_share"
+                        android:textColor="@color/block_bg_color_black_90"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/activity_bg_color_gray_transparent_20" />
+
+                    <TextView
+                        android:id="@+id/check_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/textview_fouces"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="@string/set_checkupdate"
+                        android:textColor="@color/block_bg_color_black_90"
+                        android:textSize="16sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/activity_bg_color_gray_transparent_20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="92dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/activity_bg_color_while"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/callme"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/textview_fouces"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="@string/set_call"
+                        android:textColor="@color/block_bg_color_black_90"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/activity_bg_color_gray_transparent_20" />
+
+                    <TextView
+                        android:id="@+id/about"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/textview_fouces"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="@string/set_about"
+                        android:textColor="@color/block_bg_color_black_90"
+                        android:textSize="16sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/activity_bg_color_gray_transparent_20" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

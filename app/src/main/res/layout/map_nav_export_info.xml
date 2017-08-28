@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical" >
+
+    <!-- 站点名称 -->
+
+    <LinearLayout
+        android:id="@+id/nav_export_station_name_title"
+        android:layout_width="fill_parent"
+        android:layout_height="22dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/nav_export_station_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="循礼门换乘站"
+            android:textColor="@color/block_bg_color_black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- 线路号图片 -->
+
+        <ImageView
+            android:id="@+id/nav_export_station_transfer_one"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/line_no01" />
+
+        <!-- 线路号图片 -->
+
+        <ImageView
+            android:id="@+id/nav_export_station_transfer_two"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/line_no02" />
+    </LinearLayout>
+    <!-- 分割线  站点名称|线路时间 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/activity_bg_color_gray_transparent" />
+
+    <!-- 首末班车信息 -->
+
+    <LinearLayout
+        android:id="@+id/nav_export_station_line_info_one"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rel_tv_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/lin_one_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="轨道交通一号线"
+                android:textColor="@color/activity_bg_color_blue"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lin_one_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/lin_one_name"
+                android:text="【首末班时间】"
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_one_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lin_one_name"
+                android:layout_marginTop="5dp"
+                android:text="汉口北方向："
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_one_start_gzr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lin_one_start"
+                android:layout_marginTop="5dp"
+                android:text="工作日 "
+                android:textColor="@color/green"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_one_start_gzr_sj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/lin_one_start_gzr"
+                android:layout_toRightOf="@id/lin_one_start_gzr"
+                android:text="6:00-23:08 "
+                android:textColor="@color/block_bg_color_black_transparent_90"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_one_start_sxr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/lin_one_start_gzr_sj"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/lin_one_start_gzr_sj"
+                android:text="双休日 "
+                android:textColor="@color/green"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_one_start_sxr_sj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/lin_one_start_sxr"
+                android:layout_toRightOf="@id/lin_one_start_sxr"
+                android:text="6:36-23:08 "
+                android:textColor="@color/block_bg_color_black_transparent_90"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_one_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lin_one_start_sxr_sj"
+                android:layout_marginTop="5dp"
+                android:text="东吴大道方向:"
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_one_stop_gzr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lin_one_stop"
+                android:layout_marginTop="5dp"
+                android:text="工作日 "
+                android:textColor="@color/green"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_one_stop_gzr_sj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/lin_one_stop_gzr"
+                android:layout_toRightOf="@id/lin_one_stop_gzr"
+                android:text="6:03-23:01"
+                android:textColor="@color/block_bg_color_black_transparent_90"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_one_stop_sxr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/lin_one_stop_gzr_sj"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/lin_one_stop_gzr_sj"
+                android:text="双休日 "
+                android:textColor="@color/green"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_one_stop_sxr_sj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/lin_one_stop_sxr"
+                android:layout_toRightOf="@id/lin_one_stop_sxr"
+                android:text="6:03-23:01"
+                android:textColor="@color/block_bg_color_black_transparent_90"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 分割线  站点名称|线路时间 -->
+
+
+    <!--
+            <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/activity_bg_color_gray_transparent" />
+    -->
+
+    <LinearLayout
+        android:id="@+id/nav_export_station_line_info_two"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rel_tv_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/lin_two_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="轨道交通一号线"
+                android:textColor="@color/pink"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lin_two_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/lin_two_name"
+                android:text="【首末班时间】"
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_two_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lin_two_name"
+                android:layout_marginTop="5dp"
+                android:text="汉口北方向："
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_two_start_gzr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lin_two_start"
+                android:layout_marginTop="5dp"
+                android:text="工作日 "
+                android:textColor="@color/green"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_two_start_gzr_sj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/lin_two_start_gzr"
+                android:layout_toRightOf="@id/lin_two_start_gzr"
+                android:text="6:00-23:08 "
+                android:textColor="@color/block_bg_color_black_transparent_90"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_two_start_sxr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/lin_two_start_gzr_sj"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/lin_two_start_gzr_sj"
+                android:text="双休日 "
+                android:textColor="@color/green"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_two_start_sxr_sj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/lin_two_start_sxr"
+                android:layout_toRightOf="@id/lin_two_start_sxr"
+                android:text="6:36-23:08 "
+                android:textColor="@color/block_bg_color_black_transparent_90"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_two_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lin_two_start_sxr_sj"
+                android:layout_marginTop="5dp"
+                android:text="东吴大道方向:"
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_two_stop_gzr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lin_two_stop"
+                android:layout_marginTop="5dp"
+                android:text="工作日 "
+                android:textColor="@color/green"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_two_stop_gzr_sj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/lin_two_stop_gzr"
+                android:layout_toRightOf="@id/lin_two_stop_gzr"
+                android:text="6:03-23:01"
+                android:textColor="@color/block_bg_color_black_transparent_90"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_two_stop_sxr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/lin_two_stop_gzr_sj"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/lin_two_stop_gzr_sj"
+                android:text="双休日 "
+                android:textColor="@color/green"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lin_two_stop_sxr_sj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/lin_two_stop_sxr"
+                android:layout_toRightOf="@id/lin_two_stop_sxr"
+                android:text="6:03-23:01"
+                android:textColor="@color/block_bg_color_black_transparent_90"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

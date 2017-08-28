@@ -1,0 +1,46 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light" />
+
+    <style name="AppTheme" parent="AppBaseTheme" >
+        <item name="android:windowTranslucentNavigation">false</item>
+
+    </style>
+
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:background">@drawable/boot_dialog</item> <!-- dialog背景样式 -->
+        <item name="android:windowBackground">@color/activity_bg_color_while_two</item> <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item> <!-- 模糊 -->
+    </style>
+
+    <style name="dot_style">
+        <item name="android:layout_width">5dip</item>
+        <item name="android:layout_height">5dip</item>
+        <item name="android:background">@drawable/dot_normal</item>
+        <item name="android:layout_marginLeft">1.5dip</item>
+        <item name="android:layout_marginRight">1.5dip</item>
+    </style>
+
+    <style name="NoTitle" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="startTheme" parent="@android:style/Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="settingsstyle" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textColor">@color/activity_bg_color_while</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mieasy.whrt_app_android_4"
+    android:versionCode="8"
+    android:versionName="2.0.8">
+
+    <permission
+        android:name="com.mieasy.whrt_app_android_4.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="com.mieasy.whrt_app_android_4.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 获取手机唯一标示的Id -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 网络状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- WIFI状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--社会化分享-->
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.NFC" />
+    <user-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <user-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA"/>
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES"/>
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+    <application
+        android:name="com.mieasy.whrt_app_android_4.app.ContentApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="GAME_VALUE"
+            android:value="0001" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="6545dcd6d1e22d4cf9a56079eafc2438" />
+        <!-- 友盟分享Appkey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="568dfebee0f55a6198000030" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="武汉地铁App" />
+
+        <activity
+            android:name=".welcome.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="file" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="about" />
+                <data android:scheme="javascript" />
+            </intent-filter>
+        </activity>
+        <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
+        <service android:name="com.amap.api.location.APSService" />
+        <!-- 欢迎界面 -->
+        <activity
+            android:name=".welcome.SpaceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".main.ShareAppActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <!-- 主界面 -->
+        <activity
+            android:name=".main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme"
+            android:launchMode="singleTask"/>
+        <!-- 乘车引导  高德地图导航 -->
+        <activity
+            android:name=".act.boot.MapNavActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme"
+            android:launchMode="singleTask"/>
+
+        <activity
+            android:name=".act.boot.SelectSiteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".act.boot.SelectSiteLineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme"
+            android:launchMode="singleTask"/>
+
+        <!-- 附近站点-->
+        <activity
+            android:name=".act.boot.NearbyStationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme"
+            android:launchMode="singleTask"/>
+
+        <!-- 乘车引导   起点终点 -->
+        <activity
+            android:name=".act.boot.PathActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme"
+            android:launchMode="singleTask"/>
+        <!-- 车站导航  查找线路 -->
+        <activity
+            android:name=".act.nav.NavActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme"
+            android:launchMode="singleTask"/>
+        <!-- 车站导航  站内站外 -->
+        <activity
+            android:name=".act.nav.ShowOutSideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme"
+            android:launchMode="singleTask"/>
+        <!-- 地铁新闻 -->
+        <activity
+            android:name=".act.news.NewsActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".act.info.InfoActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <!-- 地铁新闻   新闻详情 -->
+        <activity
+            android:name=".act.news.ShowNewsInfoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <!-- 地铁新闻   查看大图 -->
+        <activity
+            android:name=".act.news.ImagePagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme"
+            android:launchMode="singleTask"/>
+        <!-- 线路图 -->
+        <activity
+            android:name=".act.news.ShowImgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme"
+            android:launchMode="singleTask"/>
+        <!-- 在线咨询 -->
+        <activity
+            android:name=".act.ask.AskActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".act.ask.AskQuestionActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <!-- 站点收藏 -->
+        <activity
+            android:name=".act.pro.SiteCollectionActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <!-- 在线咨询    详细 -->
+        <activity
+            android:name=".act.ask.AskInfoActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <!-- 设置 -->
+        <activity
+            android:name=".act.set.SettingActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <!-- 设置详细 -->
+        <activity
+            android:name=".act.set.SettingInfoActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+        </activity>
+        <!--登陆-->
+        <activity
+            android:name=".act.login.ReviseActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".act.login.ValidateActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".act.login.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".act.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".act.login.Re_Password_Activity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".act.login.UpdateUserInfoActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".act.login.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <!-- 推送消息Activity-->
+        <activity
+            android:name=".jpush.NotificationActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <!-- 分享微信-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 分享QQ-->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--分享新浪微博-->
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false"></service>
+        <!--分享编辑页-->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+
+        <!-- Rich push 核心功能 since 2.0.6-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:theme="@style/MyDialogStyle"
+            android:exported="false">
+        </activity>
+        <!--极光推送   Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.mieasy.whrt_app_android_4" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required  SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.mieasy.whrt_app_android_4" />
+            </intent-filter>
+
+        </service>
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="com.mieasy.whrt_app_android_4" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false"/>
+        <!--   用户自定义的广播接收器-->
+        <receiver
+            android:name=".jpush.NotificationReceiver"
+            android:exported="false"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.mieasy.whrt_app_android_4" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default"/>
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="3653752ecbf6db5f96dbd1c1" />
+        <!-- 武汉通查询-->
+        <activity
+            android:name=".act.set.NfcqueryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

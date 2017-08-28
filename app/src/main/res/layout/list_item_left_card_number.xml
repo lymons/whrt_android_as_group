@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_left_lin"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp"
+    android:minHeight="45dp"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/item_left_view"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@color/activity_bg_color_blue"/>
+
+    <TextView
+        android:id="@+id/item_left_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="marquee"
+        android:ems="4"
+        android:gravity="left"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:text="一号线"
+        android:textColor="@color/line_list_text"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/item_left_iv"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/line_no01"
+        android:scaleType="fitXY"/>
+
+</LinearLayout>
+
+ <!--TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_left_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:ellipsize="marquee"
+    android:ems="10"
+    android:gravity="left"
+    android:marqueeRepeatLimit="marquee_forever"
+    android:paddingBottom="8dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="8dp"
+    android:singleLine="true"
+    android:text="一号线"
+    android:textSize="18sp" /> -->

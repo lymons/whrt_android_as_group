@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 路线详细 -->
+    <ListView
+        android:id="@+id/lv_boot_pathinfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/activity_bg_color_gray_transparent"
+        android:dividerHeight="0.5dp">
+    </ListView>
+</LinearLayout>

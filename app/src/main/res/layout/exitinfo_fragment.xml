@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <!--<ListView-->
+    <!--android:id="@+id/lv_exitinfo"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"/>-->
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/tv_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:src="@drawable/icon_select_tu"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_showInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="暂无出口数据,敬请期待!"
+        android:textColor="#404040"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+</LinearLayout>

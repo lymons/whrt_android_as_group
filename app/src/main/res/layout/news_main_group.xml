@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <ProgressBar 
+        android:id="@+id/pro_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:visibility="gone"/>
+    
+    <com.mieasy.whrt_app_android_4.view.RefreshableView
+        android:id="@+id/refreshable_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- 滑动图片 -->
+        <ListView
+            android:id="@+id/lv_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:divider="@color/activity_bg_color_gray_transparent"
+            android:dividerHeight="1px"
+            android:footerDividersEnabled="true"
+            android:layoutAnimation="@anim/list_anim_layout"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+
+    </com.mieasy.whrt_app_android_4.view.RefreshableView>
+
+</LinearLayout>

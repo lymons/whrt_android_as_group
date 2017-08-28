@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_bg_color_blue"
+    android:orientation="vertical" >
+
+    <!-- 车站导航 标题 -->
+
+    <LinearLayout
+        android:id="@+id/lin_main_top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/lin_top_left_home"
+            android:layout_width="120dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/iv_top_left_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/block_bg_color_alpha"
+                android:scaleType="fitXY"
+                android:src="@drawable/back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_top_left_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/block_nav"
+                android:textColor="@color/activity_bg_color_while"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/add_site_layout"
+            android:layout_width="120dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/add_site"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:background="@color/block_bg_color_alpha"
+                android:scaleType="fitXY"
+                android:src="@drawable/navi_collect_add" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.mieasy.whrt_app_android_4.view.InfoViewPager
+        android:id="@+id/lv_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/boot_dialog_bg_alpa_gray" >
+    </com.mieasy.whrt_app_android_4.view.InfoViewPager>
+
+    <!-- 车站导航 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/activity_bg_color_while"
+        android:minHeight="50dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/ib_outside"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/activity_bg_color_while"
+                android:src="@drawable/navi_inside_deselect" />
+
+            <TextView
+                android:id="@+id/tv_outside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/activity_bg_color_gray"
+                android:text="出口地图"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ib_exitinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/activity_bg_color_while"
+                android:src="@drawable/exitinfo_defualt"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_exitinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="出口信息"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="10sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/ib_intra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/activity_bg_color_while"
+                android:src="@drawable/navi_exit_deselect" />
+
+            <TextView
+                android:id="@+id/tv_intra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/intraboot"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

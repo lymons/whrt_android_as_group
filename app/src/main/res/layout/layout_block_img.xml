@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:background="@color/activity_bg_color_while"
+    android:orientation="vertical"
+    android:paddingBottom="14dp" >
+
+    <!-- 方形标签 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 地铁新闻 -->
+        <LinearLayout
+            android:id="@+id/lin_block_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/ib_img_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_news"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/tv_txt_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/block_news"
+                    android:textColor="@color/activity_bg_color_gray"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <!-- 在线咨询 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/ib_img_ask"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/main_ask"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/tv_txt_ask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="@string/block_ask"
+                    android:textColor="@color/activity_bg_color_gray"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <!--行程收藏-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/ib_img_pros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/main_pro"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/tv_txt_pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="@string/block_col"
+                    android:textColor="@color/activity_bg_color_gray"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_block_second"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/ib_img_boot"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/main_boot"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/tv_txt_boot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="@string/block_boot"
+                    android:textColor="@color/activity_bg_color_gray"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/ib_img_nav"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/main_nav"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/tv_txt_nav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="@string/block_nav"
+                    android:textColor="@color/activity_bg_color_gray"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/ib_img_set"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/site_stations"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/tv_txt_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="@string/site_stations"
+                    android:textColor="@color/activity_bg_color_gray"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>

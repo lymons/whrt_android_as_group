@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color_while"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/activity_bg_color_gray_transparent_20" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="203dp" >
+
+        <TableRow
+            android:id="@+id/call_row_one"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:background="@drawable/textview_fouces"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/call_official_web"
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="@string/call_web_url"
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/check_right" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/activity_bg_color_gray_transparent_20" />
+
+        <TableRow
+            android:id="@+id/call_row_two"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:background="@drawable/textview_fouces"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/call_server_num"
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="@string/call_server_num_info1"
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/check_right" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/activity_bg_color_gray_transparent_20"
+            />
+
+        <!--<TableRow-->
+            <!--android:id="@+id/call_row_three"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_weight="2"-->
+            <!--android:background="@drawable/textview_fouces"-->
+            <!--android:clickable="true" >-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:text="@string/call_server_num"-->
+                <!--android:textColor="@color/block_bg_color_black"-->
+                <!--android:textSize="16sp" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center_vertical|right"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:text="@string/call_server_num_info2"-->
+                <!--android:textColor="@color/block_bg_color_black"-->
+                <!--android:textSize="16sp" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="18dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:src="@drawable/check_right" />-->
+        <!--</TableRow>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/activity_bg_color_gray_transparent_20" />-->
+
+        <TableRow
+            android:id="@+id/call_row_four"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:background="@drawable/textview_fouces"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/call_official_weibo"
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="@string/call_whrt_operate"
+                android:textColor="@color/block_bg_color_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/check_right" />
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/activity_bg_color_gray_transparent_20" />
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myxmlns="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_revise"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/detail_title" />
+
+    <LinearLayout
+        android:id="@+id/lin_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_bg_color_while"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="昵称:"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/update_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:background="@null"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#dddddd" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_bg_color_while"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="手机号:"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/update_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:background="@null"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#dddddd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_bg_color_while"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="电子邮箱:"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/update_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:background="@null"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#dddddd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_bg_color_while"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="所在地址:"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/update_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:background="@null"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#dddddd" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_bg_color_while"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="10"
+                android:text="修改密码"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/gotoupdateppassword" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#dddddd" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/update_user_info_btn"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_login_submit_button"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</LinearLayout>

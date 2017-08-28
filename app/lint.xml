@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="NewApi" severity="ignore" />
+    <issue id="ResourceAsColor">
+        <ignore path="src/com/mieasy/whrt_app_android_4/act/boot/PathActivity.java" />
+        <ignore path="src/com/mieasy/whrt_app_android_4/act/nav/ShowOutSideActivity.java" />
+    </issue>
+</lint>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/about_info" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/about_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textColor="@color/block_bg_color_black_80"
+        android:textSize="13sp" />
+	
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/terms_of_use"
+        android:textSize="22sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/block_bg_color_black"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/activity_bg_color_gray_transparent_90"
+        android:paddingBottom="2dp"/>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <TextView
+            android:id="@+id/about_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/block_bg_color_black"
+            android:textSize="16sp" 
+            android:layout_marginBottom="10dp"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_bg_color_gray_transparent_20"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/about_copyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/block_bg_color_black_80"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/activity_bg_color_while"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_instation_img"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_instation_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="matrix"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        <include layout="@layout/map_nav_export_info" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

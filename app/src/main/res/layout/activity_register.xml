@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color_while"
+    android:orientation="vertical">
+
+    <!-- 上方图片 -->
+
+    <include layout="@layout/detail_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/reg_top_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/logindb" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 用户名 -->
+        <EditText
+            android:id="@+id/tv_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:hint="@string/hint_user_login"
+            android:lines="1"
+            android:padding="6dip"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="#cfcccc" />
+        <!-- 密码 -->
+        <EditText
+            android:id="@+id/tv_user_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:hint="@string/hint_pass_login"
+            android:lines="1"
+            android:padding="6dip"
+            android:password="true"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="#cfcccc" />
+        <!-- 确认密码 -->
+        <EditText
+            android:id="@+id/tv_again_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:hint="@string/hint_again_pass_login"
+            android:lines="1"
+            android:padding="6dip"
+            android:password="true"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="#cfcccc" />
+        <!-- 手机号 -->
+        <EditText
+            android:id="@+id/tv_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:hint="@string/hint_phone_number_login"
+            android:inputType="number"
+            android:lines="1"
+            android:padding="6dip"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="#cfcccc" />
+        <!-- 邮箱 -->
+        <EditText
+            android:id="@+id/tv_email_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:hint="@string/hint_email_login"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:padding="6dip"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="#cfcccc" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reg_submit"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_login_submit_button"
+        android:gravity="center"
+        android:text="@string/submit_reg"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</LinearLayout>

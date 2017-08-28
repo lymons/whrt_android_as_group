@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:myxmlns="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/bg_gs">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:orientation="horizontal">
+
+                        <com.mieasy.whrt_app_android_4.widget.RingsImgageView
+                            android:id="@+id/login_btn"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:contentDescription="@null"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/uu"
+                            myxmlns:border_color="#dddddd"
+                            myxmlns:border_width="3dp"/>
+                        <TextView
+                            android:id="@+id/nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:hint="昵称"
+                            android:textColorHint="#ffffff"
+                         />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <!--<TextView-->
+                    <!--style="@style/settingsstyle"-->
+                    <!--android:text="我的消息" />-->
+
+                <TextView
+                    android:id="@+id/text_size"
+                    style="@style/settingsstyle"
+                    android:text="正文字号" />
+
+
+                <TextView
+                    android:id="@+id/share_app"
+                    style="@style/settingsstyle"
+                    android:text="推荐此应用" />
+
+                <TextView
+                    android:id="@+id/callme"
+                    style="@style/settingsstyle"
+                    android:text="联系我们" />
+
+                <TextView
+                    android:id="@+id/page_welcome"
+                    style="@style/settingsstyle"
+                    android:text="欢迎页面" />
+                <TextView
+                    android:id="@+id/query_nfc"
+                    style="@style/settingsstyle"
+                    android:text="武汉通查询" />
+
+                <TextView
+                    android:id="@+id/check_update"
+                    style="@style/settingsstyle"
+                    android:text="检查更新" />
+
+                <TextView
+                    android:id="@+id/about"
+                    style="@style/settingsstyle"
+                    android:text="关于" />
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

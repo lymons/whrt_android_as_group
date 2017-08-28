@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/lin_main_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_bg_color_blue"
+        android:gravity="center"
+        android:minHeight="40dip"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/detail_title" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/hor_scollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/lin_main_top_title">
+
+        <com.viewpagerindicator.TabPageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lin_main_top_title"
+            android:background="@color/transparentblue" />
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/hor_scollview" />
+
+</RelativeLayout>

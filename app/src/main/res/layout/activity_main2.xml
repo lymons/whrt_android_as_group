@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mieasy.whrt_app_android_4.widget.DragLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/sideslip_layout" />
+
+    <com.mieasy.whrt_app_android_4.widget.CustomRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2aaced"
+                android:gravity="bottom">
+                <!-- 主界面头 -->
+                <include layout="@layout/main_title" />
+            </RelativeLayout>
+            <!-- 主要内容 -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <fragment
+                    android:id="@+id/main_info_fragment"
+                    class="com.mieasy.whrt_app_android_4.main.SideslipFragment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+            </FrameLayout>
+        </LinearLayout>
+
+    </com.mieasy.whrt_app_android_4.widget.CustomRelativeLayout>
+</com.mieasy.whrt_app_android_4.widget.DragLayout>

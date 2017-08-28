@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aaa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color_while"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/lin_main_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- 图片轮播 -->
+
+        <FrameLayout
+            android:id="@+id/frg_main_silde"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"/>
+
+
+        <FrameLayout
+            android:id="@+id/frg_main_block"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!--  <include layout="@layout/layout_block"/>	 -->
+    </LinearLayout>
+    <!-- 界面底部 -->
+    <include layout="@layout/detail_bottom" />
+
+</LinearLayout>

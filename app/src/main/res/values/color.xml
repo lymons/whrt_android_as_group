@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+ <!--    <color name="activity_bg_color_blue">#295fa3</color> -->
+	<color name="white">#FFFFFF</color>
+	<color name="blue">#499BF7</color>
+	<color name="white_drak">#FFFFFF</color>
+	<color name="backgrund_color">#84bfc1bf</color>
+
+
+	<color name="colorPrimary">#4895e4</color>
+	<color name="activity_bg_color_blue">#4794e2</color>
+	<color name="activity_bg_color_while">#ffffff</color>
+	<color name="activity_bg_color_while_two">#00ffffff</color>
+	<color name="activity_bg_color_gray">#747474</color>
+	<color name="activity_bg_color_gray_transparent">#60747474</color>
+	<color name="activity_bg_color_gray_transparent_90">#90747474</color>
+	<color name="activity_bg_color_gray_transparent_20">#20747474</color>
+	<color name="block_bg_color_black">#000000</color>
+	<color name="block_bg_color_black_80">#80000000</color>
+	<color name="block_bg_color_black_90">#90000000</color>
+	<color name="block_bg_color_alpha">#00000000</color>
+	<color name="boot_dialog_text_bg">#004986</color>
+	<color name="boot_dialog_bg_alpa_gray">#90e5e5e5</color>
+	<color name="boot_dialog_bg_alpa_gray_two">#10e5e5e5</color>
+	<color name="transparent">#00ffffff</color>
+	<color name="block_bg_color_black_transparent">#50000000</color>
+	<color name="block_bg_color_black_transparent_50">#50000000</color>
+	<color name="block_bg_color_black_transparent_90">#90000000</color>
+
+	<color name="demo_color1">#747474</color>
+	<color name="demo_color2">#747436</color>
+
+
+	<color name="line_no1">#036eb8</color>
+	<color name="line_no2">#ffa2ea</color>
+	<color name="line_no3">#f8b62d</color>
+	<color name="line_no4">#8fc31f</color>
+
+	<color name="line_list">#f6f6f6</color>
+	<color name="line_list_text">#535353</color>
+
+	<color name="green">#009944</color>
+	<color name="orange">#eb6100</color>
+	<color name="pink">#ffb6c1</color>
+
+	<color name="transparentblue">#506699FF</color>
+	<color name="primary">#FF03A9F4</color>
+	<color name="primary_dark">#FF0288D1</color>
+	<color name="status_bar_color">@color/primary_dark</color>
+	<color name="white_green">#f1f9f8</color>
+	<color name="login_color">#7abcfa</color>
+</resources>

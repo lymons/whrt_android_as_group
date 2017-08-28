@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color_while"
+    >
+
+    <com.mieasy.whrt_app_android_4.view.HackyViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/saveimg_button"
+        android:minHeight="36dp"
+        android:minWidth="80dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="保存"
+        android:textColor="@color/activity_bg_color_while" />
+
+</FrameLayout>

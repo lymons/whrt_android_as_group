@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color_while"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_main_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_bg_color_blue"
+        android:gravity="center"
+        android:minHeight="40dip"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/detail_title" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/pro_showlineimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center">
+    </FrameLayout>
+
+</LinearLayout>

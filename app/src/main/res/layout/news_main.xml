@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color_while"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_main_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_bg_color_blue"
+        android:gravity="center"
+        android:minHeight="40dip"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/detail_title" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/hor_scollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white_green"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/lin_tab_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:text="@string/group_express"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_operation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:text="@string/metro_operation"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="16sp" />
+			
+            <TextView 
+                android:id="@+id/tv_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:text="@string/block_notice"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_metro_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:text="@string/metro_pic"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_tender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:text="@string/invitation_tender"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_land"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:text="@string/pro_land"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_toronto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:text="@string/pro_toronto"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_pro_constru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:text="@string/pro_constru"
+                android:textColor="@color/activity_bg_color_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">武汉地铁</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="confirm">确定</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="block_notice">通知通告</string>
+    <string name="block_setting">设置</string>
+    <string name="site_stations">附近站点</string>
+    <string name="block_my">我的</string>
+    <string name="block_news">新闻公告</string>
+    <string name="block_pro">在建工程</string>
+    <string name="block_boot">乘车引导</string>
+    <string name="block_nav">车站导航</string>
+    <string name="block_ask">在线咨询</string>
+    <string name="block_col">行程收藏</string>
+    <string name="main_bottom">Copyright © 2016 WHRT.GOV.CN 版权所有：武汉地铁集团有限公司</string>
+    <string name="stand_stop">地铁终点</string>
+    <string name="stop">终点</string>
+    <string name="stand_start">地铁起点</string>
+    <string name="start">起点</string>
+    <string name="search_path">路线查询</string>
+    <string name="stationName">车站名</string>
+    <string name="setStart">设为起点</string>
+    <string name="setStop">设为终点</string>
+    <string name="outsideInfo">出口信息</string>
+    <string name="outsideInfos">出口地图</string>
+    <string name="gohereInfo">到这里去</string>
+    <string name="intraInfo">乘车信息</string>
+    <string name="outsideboot">出口信息</string>
+    <string name="intraboot">乘车信息</string>
+    <string name="block_site">选择站点</string>
+    <string name="mappath">地图引导</string>
+    <string name="infopath">线路概况</string>
+    <string name="linepath">线路规划</string>
+    <string name="departInfo">详情</string>
+    <string name="group_express">集团快讯</string>
+    <string name="metro_operation">地铁运营</string>
+    <string name="metro_pic">在建线路</string>
+    <string name="invitation_tender">招标中标</string>
+    <string name="pro_constru">地铁建设</string>
+    <string name="pro_toronto">建设公司</string>
+    <string name="pro_land">土地开发</string>
+    <string name="myInfo">我的</string>
+    <string name="demoimg">itemImg</string>
+    <string name="demo">2016WHRT.GOV.CN版权所有：武汉地铁集团有限公司</string>
+    <string name="user_login">账&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;号：</string>
+    <string name="pass_login">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;码： </string>
+    <string name="again_pass_login">确认密码： </string>
+    <string name="phone_number">手机号码：</string>
+    <string name="user_email">邮&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;箱：</string>
+    <string name="hint_user_login">请输入用户名</string>
+    <string name="hint_user_logins">请输入用户名/手机号</string>
+    <string name="hint_pass_login">请输入密码(6~16位字母或数字)</string>
+    <string name="hint_again_pass_login">确认密码</string>
+    <string name="hint_email_login">请输入邮箱</string>
+    <string name="hint_phone_number_login">请输入手机号</string>
+    <string name="submit_reg">注册</string>
+    <string name="submit_login">登录</string>
+    <string name="submit_no_user">没有账号，马上注册</string>
+    <!-- 用户名密码验证 -->
+    <string name="login_success">登陆成功</string>
+    <string name="pass_null">密码不能为空</string>
+    <string name="user_null">用户名不能为空</string>
+    <!-- 轨道交通线路 -->
+    <string name="line_one">1号线</string>
+    <string name="line_two">2号线</string>
+    <string name="line_three">3号线</string>
+    <string name="line_four">4号线</string>
+    <string name="line1">轨道交通一号线</string>
+    <string name="line2">轨道交通二号线</string>
+    <string name="line3">轨道交通三号线</string>
+    <string name="line4">轨道交通四号线</string>
+    <string name="source">来源:</string>
+    <!-- 高德地图相关提示 -->
+    <string name="error_network">搜索失败,请检查网络连接！</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="error_key">key验证无效！</string>
+    <string name="error_other">未知错误，请稍后重试!错误码为</string>
+    <!-- 线路引导 -->
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="prolinepic">线路图</string>
+    <string name="station_huan">换乘站</string>
+    <!-- 在线咨询 -->
+    <string name="updateInfo">更新提示</string>
+    <string name="clientname">提问者</string>
+    <string name="submitDate">提问时间</string>
+    <string name="question">问题内容</string>
+    <string name="askper">回答者：武汉地铁</string>
+    <string name="asktime">回答时间</string>
+    <string name="reply">回答内容</string>
+    <!-- ImageLoader -->
+    <string name="download_success">下载成功</string>
+    <string name="download_error">下载错误</string>
+    <string name="pic_notShow">图片无法显示</string>
+    <string name="network_error">网络有问题，无法下载</string>
+    <string name="pic_sobig">图片太大无法显示</string>
+    <string name="other_error">未知的错误</string>
+    <!-- 设置 -->
+    <string name="terms_of_use">使用条款</string>
+    <string name="set_querynfc">武汉通查询</string>
+    <string name="set_textsize">正文字号</string>
+    <string name="set_welcome">欢迎页</string>
+    <string name="set_share">推荐此应用</string>
+    <string name="set_checkupdate">检查更新</string>
+    <string name="set_call">联系我们</string>
+    <string name="set_about">关于</string>
+    <!-- 字体设置 -->
+    <string name="text_21">21号字</string>
+    <string name="text_20">20号字</string>
+    <string name="text_19">19号字</string>
+    <string name="text_18">18号字</string>
+    <string name="text_17">17号字</string>
+    <string name="text_16">16号字</string>
+    <string name="text_sweep">扫一扫 下载官方App</string>
+    <string name="btn_share_text">分享给好友</string>
+    <!-- 联系方式 -->
+    <string name="call_official_web">官方网站</string>
+    <string name="call_web_url">www.whrt.gov.cn</string>
+    <string name="call_web_httpurl">http://www.whrt.gov.cn</string>
+    <string name="call_weibo_url">http://m.weibo.cn/u/3186945861?jumpfrom=weibocom</string>
+    <string name="call_server_num">服务热线</string>
+    <string name="call_server_num_info1">027-96556</string>
+    <string name="call_server_num_info2">027-83749999</string>
+    <string name="call_official_weibo">官方微博</string>
+    <string name="call_whrt_operate">武汉地铁运营</string>
+    <!-- 武汉通查询-->
+    <string name="call_whrt_nfc">碰一碰查余额</string>
+    <string name="call_whrt_nfc2">请将公交卡贴于手机背面</string>
+    <string name="menu_clear">清屏</string>
+    <string name="menu_help">帮助</string>
+    <string name="menu_about">关于</string>
+    <string name="btn_copy">复制</string>
+    <string name="btn_nfc">设置</string>
+    <string name="btn_exit">退出</string>
+    <string name="tip_nfc_notfound">您的手机不支持NFC,无法使用此功能</string>
+    <string name="tip_nfc_disabled">NFC已禁用,请点击设置</string>
+    <string name="tip_nfc_enabled">NFC已启用</string>
+    <string name="msg_reading">读取中...</string>
+    <string name="msg_nonfc">没有找到NFC硬件，程序无法工作！</string>
+    <string name="msg_nfcdisabled">NFC已被禁用，请先启用该硬件。可以使用下边的 ‘设置’ 按钮控制NFC传感器的开关。</string>
+    <string name="msg_nocard">没有卡片信息，请将卡片靠近手机后盖尝试重新读取。</string>
+    <string name="msg_copied">卡片信息已经复制到剪贴板</string>
+    <string name="lab_id">标识：</string>
+    <string name="lab_pmm">参数：</string>
+    <string name="lab_serl">序号：</string>
+    <string name="lab_ver">版本：</string>
+    <string name="lab_date">生效：</string>
+    <string name="lab_op">使用：</string>
+    <string name="lab_log">交易记录：</string>
+    <string name="lab_balance">余额：</string>
+    <string name="lab_cur_cny">元</string>
+    <string name="lab_cur_hkd">港币</string>
+    <string name="lab_op_time">次</string>
+    <string name="lab_user_id">读者证号：</string>
+    <string name="lab_bktg_sn">书籍编号：</string>
+    <string name="lab_bkcat">书籍类别：</string>
+
+    <string name="name_bkcat_soc">社会科学</string>
+    <string name="name_bkcat_sci">自然科学</string>
+    <string name="name_bkcat_ltr">文学</string>
+    <string name="name_octopuscard">八达通卡（香港）</string>
+    <string name="name_szt">深圳通卡</string>
+    <string name="name_szt_f">深圳通卡（旧版）</string>
+    <string name="name_lnt">岭南通卡（羊城通）</string>
+    <string name="name_wht">武汉城市一卡通</string>
+    <string name="name_cac">长安通卡</string>
+    <string name="name_bj">北京市政交通卡</string>
+    <string name="name_bj_m">北京市政交通卡（旧版）</string>
+    <string name="name_unknowntag">未知的电子标签</string>
+    <string name="name_szlib_center">深圳图书馆（市民中心）</string>
+    <string name="name_szlib_nanshan">深圳图书馆（南山）</string>
+    <string name="name_lib_readercard">读者证</string>
+    <string name="name_lib_booktag">书籍标签</string>
+
+    <string name="exit_user">注销</string>
+    <string name="nearbystation">附近站点</string>
+
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+</resources>

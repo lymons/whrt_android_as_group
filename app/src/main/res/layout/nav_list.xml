@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<ListView 
+	    android:id="@+id/lv_nav_listview"
+	    android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="@color/activity_bg_color_gray_transparent"
+		android:dividerHeight="1px" 
+		android:footerDividersEnabled="true"
+        android:listSelector="@android:color/transparent"
+        android:layoutAnimation="@anim/list_anim_layout">
+	    
+	</ListView>
+</LinearLayout>

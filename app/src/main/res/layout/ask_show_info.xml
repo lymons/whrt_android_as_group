@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color_while"
+    android:orientation="vertical" >
+
+    <include layout="@layout/detail_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_ask_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/block_bg_color_black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!-- 提问者模块 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" >
+
+                <!-- 提问者 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="6dip" >
+
+                    <ImageView
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/question_item" />
+                </LinearLayout>
+                <!-- 问题 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!-- 提问者 -->
+
+                    <TextView
+                        android:id="@+id/tv_question_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dip"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_question_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dip"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                    <!-- 提问时间 -->
+
+                    <TextView
+                        android:id="@+id/tv_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="2dip"
+                        android:paddingRight="10dip"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 回答者模块 -->
+
+            <LinearLayout
+                android:id="@+id/lin_ask_reply_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" >
+
+                <!-- 回答者 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="6dip">
+
+                    <ImageView
+                        android:id="@+id/img_ask_reply"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ask_item" 
+                        android:visibility="gone"/>
+                </LinearLayout>
+                <!-- 回答 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!-- 回答者 -->
+
+                    <TextView
+                        android:id="@+id/tv_ask_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dip"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                    <!-- 回答时间 -->
+
+                    <TextView
+                        android:id="@+id/tv_ask_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dip"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                    <!-- 回答内容 -->
+
+                    <TextView
+                        android:id="@+id/tv_ask"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="2dip"
+                        android:paddingRight="10dip"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
